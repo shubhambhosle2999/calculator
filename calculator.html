@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function add(){
+          var a=document.getElementById("num1").value*1;
+          var b=document.getElementById("num2").value*1;
+            var result;
+            result= a+b;
+            document.getElementById("result").value=result;
+        }
+        function sub(){
+            var a=document.getElementById("num1").value*1;
+          var b=document.getElementById("num2").value*1;
+            var result;
+            result= a-b;
+            document.getElementById("result").value=result;
+        }
+        function mul(){
+            var a=document.getElementById("num1").value*1;
+          var b=document.getElementById("num2").value*1;
+            var result;
+            result= a*b;
+            document.getElementById("result").value=result;  
+        }
+        function div(){
+            var a=document.getElementById("num1").value*1;
+          var b=document.getElementById("num2").value*1;
+            var result;
+            result= a/b;
+            document.getElementById("result").value=result; 
+        }
+    </script>
+</head>
+<body align="center"style="padding-top:10% ;">
+  <h1 align="center" style="">Calculator</h1>
+    <table style="height: 100px;font-size: 20px;background-color: aquamarine;"border="2" align="center" height="" width="50%" cellspacing="30"cellpadding="30">
+        <tr>
+            <td>
+            <label for="number1"> Firts number:</label>
+            <input type="text"  id="num1"name="num1"/>
+            <br>
+            <br>
+            <label for="number2"> Second number:</label>
+            <input type="text" id="num2" name="num2"/>
+            <br>
+            <br>
+            
+            <input style="font: 1em sans-serif;"type="button" id="add"onclick="add()" value="+"/>
+            <input style="font: 1em sans-serif;"type="button" id="sub"onclick="sub()" value="-"/>
+            <input style="font: 1em sans-serif;"type="button" id="mul"onclick="mul()" value="*"/>
+            <input style="font: 1em sans-serif;"type="button" id="div"onclick="div()" value="/"/>
+            <br><br>
+            <label for="result">Result:</label>
+            <input type="text" id="result" name="result" />
+        </td>
+        </tr>
+</table>
+</body>
+</html>
